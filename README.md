@@ -10,25 +10,25 @@ O programa principal permite ler o grafo, encontrar caminhos entre dois vértice
 
 ### 🔹 Teste de leitura da matriz de adjacência
 ```bash
-gcc -Wall -Wextra -O2 -Iinclude src/teste_leitura.c src/grafo.c src/io_grafo.c -o teste_leitura.exe
+gcc -Wall -Wextra -O2 -Iinclude teste_leitura.c grafo.c io_grafo.c -o teste_leitura.exe
 .\teste_leitura.exe
 ```
 
 ### 🔹 Caminho mínimo com BFS (Busca em Largura)
 ```bash
-gcc -Wall -Wextra -O2 -Iinclude src/teste_bfs.c src/bfs.c src/grafo.c src/io_grafo.c -o teste_bfs.exe
+gcc -Wall -Wextra -O2 -Iinclude teste_bfs.c bfs.c grafo.c io_grafo.c -o teste_bfs.exe
 .\teste_bfs.exe
 ```
 
 ### 🔹 Caminho qualquer com DFS (Busca em Profundidade)
 ```bash
-gcc -Wall -Wextra -O2 -Iinclude src/teste_dfs.c src/dfs.c src/grafo.c src/io_grafo.c -o teste_dfs.exe
+gcc -Wall -Wextra -O2 -Iinclude teste_dfs.c dfs.c grafo.c io_grafo.c -o teste_dfs.exe
 .\teste_dfs.exe
 ```
 
 ### 🔹 Programa Integrado – Menu do Labirinto
 ```bash
-gcc -Wall -Wextra -O2 -Iinclude src/labirinto.c src/bfs.c src/dfs.c src/grafo.c src/io_grafo.c src/caminho.c -o labirinto.exe
+gcc -Wall -Wextra -O2 -Iinclude labirinto.c bfs.c dfs.c grafo.c io_grafo.c caminho.c -o labirinto.exe
 .\labirinto.exe
 ```
 
